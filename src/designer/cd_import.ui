@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CdImport</class>
+ <widget class="QDialog" name="CdImport">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>671</width>
+    <height>784</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CD Import</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../assets/icon.png</normaloff>../../assets/icon.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Result ID</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="result">
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="midLineWidth">
+        <number>2</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Disc ID</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="discId">
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="midLineWidth">
+        <number>2</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Length</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="length">
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="midLineWidth">
+        <number>2</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="2">
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>&amp;Artist</string>
+       </property>
+       <property name="buddy">
+        <cstring>artist</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="artist">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="titleLabel">
+       <property name="text">
+        <string>T&amp;itle</string>
+       </property>
+       <property name="buddy">
+        <cstring>title</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="title">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Categ&amp;ory</string>
+       </property>
+       <property name="buddy">
+        <cstring>category</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QComboBox" name="category">
+       <item>
+        <property name="text">
+         <string>Blues</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Classical</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Country</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Data (ISO9660 and other data CDs)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Folk</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Jazz</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>New Age</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Reggae</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Rock (funk, soul, rap, pop, industrial, metal, etc.)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Soundtrack (movies, shows)</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Misc (others that do not fit in the above categories)</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>&amp;Genre</string>
+       </property>
+       <property name="buddy">
+        <cstring>genre</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="genre">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>&amp;Year</string>
+       </property>
+       <property name="buddy">
+        <cstring>year</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="year">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>E&amp;xtra Information</string>
+       </property>
+       <property name="buddy">
+        <cstring>extraInfo</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLineEdit" name="extraInfo">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0" colspan="2">
+      <widget class="Line" name="line_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QCheckBox" name="compilation">
+       <property name="text">
+        <string>Is &amp;Compilation?</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="type">
+       <item>
+        <property name="text">
+         <string>Single</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>EP</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LP</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="numberOfTracks">
+       <property name="minimumSize">
+        <size>
+         <width>25</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Panel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <property name="lineWidth">
+        <number>2</number>
+       </property>
+       <property name="midLineWidth">
+        <number>2</number>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableView" name="tracks">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="dragEnabled">
+      <bool>true</bool>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="eject">
+       <property name="toolTip">
+        <string>Eject the CDROM</string>
+       </property>
+       <property name="text">
+        <string>&amp;Eject</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="query">
+       <property name="toolTip">
+        <string>Query CDDB for the CD information</string>
+       </property>
+       <property name="text">
+        <string>Q&amp;uery</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="save">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="toolTip">
+        <string>Save the current CDDB info to the database</string>
+       </property>
+       <property name="text">
+        <string>&amp;Save</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="editTracks">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="text">
+        <string>Edit &amp;Tracks</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="quit">
+       <property name="toolTip">
+        <string>Quit for the day</string>
+       </property>
+       <property name="text">
+        <string>&amp;Quit</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>artist</tabstop>
+  <tabstop>title</tabstop>
+  <tabstop>category</tabstop>
+  <tabstop>genre</tabstop>
+  <tabstop>year</tabstop>
+  <tabstop>extraInfo</tabstop>
+  <tabstop>compilation</tabstop>
+  <tabstop>type</tabstop>
+  <tabstop>eject</tabstop>
+  <tabstop>query</tabstop>
+  <tabstop>save</tabstop>
+  <tabstop>editTracks</tabstop>
+  <tabstop>quit</tabstop>
+  <tabstop>tracks</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>quit</sender>
+   <signal>clicked()</signal>
+   <receiver>CdImport</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>600</x>
+     <y>758</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>517</x>
+     <y>749</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
